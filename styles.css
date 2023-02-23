@@ -1,0 +1,317 @@
+* {
+  padding: 0px;
+  margin: 35px;
+  background: #DDD0C8;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+
+}
+
+.top ul {
+  list-style: none;
+  background: #DDD0C8;
+  font-size: 25px;
+}
+
+.top li {
+  display: inline-block;
+}
+
+.top a {
+  text-decoration: none;
+  color: #000;
+  background-color: #DDD0C8;
+  width: 100px;
+  padding: 23px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.Intro {
+  padding: 5%;
+  color: black;
+  margin: 20px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+
+/*Into section*/
+.Intro h1 {
+  font-size: 75px;
+  padding-bottom: 10px;
+}
+
+.Intro p {
+  font-size: 45px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  margin-left: 20%;
+}
+
+.pfp {
+  width: 400px;
+  height: 400px;
+  clip-path: circle();
+}
+
+
+/*Bio section*/
+.Hero {
+  padding: 4%;
+  margin-top: 13%;
+  border-bottom: 2px solid #321c20;
+  border-top: 2px solid #321c20;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #C9B9B2;
+}
+
+.Hero h2 {
+  font-size: 50px;
+  padding-bottom: 20px;
+  background-color: #C9B9B2;
+}
+
+.Hero p {
+  font-size: 20px;
+  background-color: #C9B9B2;
+  text-align: center;
+}
+
+
+/*Project section*/
+.Projects {
+  padding: 4%;
+  margin-top: 10%;
+  border-bottom: 2px solid #321c20;
+  border-top: 2px solid #321c20;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.Projects h2 {
+  font-size: 50px;
+  text-align: center;
+  padding: 3%;
+}
+
+.ducks {
+  width: 60vh;
+  max-width: 60vh;
+}
+
+.osaka,
+.room1 {
+  width: 60vh;
+  height: 340px;
+  margin: 0vh;
+  align-items: stretch;
+  position: relative;
+}
+
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  right: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #321c20;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+
+/*Contact section*/
+.Contact {
+  display: inline-block;
+  align-items: center;
+  margin: 100px;
+  padding: 4%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.Contact h2{
+  margin:auto;
+  width: 50%;
+  padding-bottom: 40%;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.Contact p{
+  margin: auto;
+  width: fit-content;
+  font-size: 30px;
+  display: block;
+}
+
+.Contact a{
+  background-color:#321c20;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+@media screen and (min-width:320px) {
+  .pfp {
+    padding: auto;
+    margin: auto;
+    align-items: auto;
+    height: fit-content;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .ducks {
+    width: 60vh;
+    max-width: 60vh;
+    margin: 0%;
+    align-items: center;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+
+  .osaka,
+  .room1 {
+    width: 60vh;
+    display: inline-flex;
+    margin: 0%;
+    height: 340px;
+    align-items: stretch;
+    border-radius: 8px;
+
+  }
+
+  .container {
+
+    float: left;
+    display: inline;
+    align-items: center;
+     text-align: center;
+  }
+}
+
+
+@media screen and (min-width: 320px) {
+
+  .Intro,
+  .Hero,
+  .top 
+  .contact{
+    padding: 3%;
+    margin: 1%;
+    align-items: center;
+  }
+}
+
+.Intro h1 {
+  font-size: 50px;
+}
+
+.Intro p {
+  font-size: 45px;
+}
+
+.Hero h2 {
+  font-size: 75px;
+  padding-bottom: 30px;
+}
+
+.Hero p {
+  font-size: 30px;
+}
+
+
+
+.Contact h2{
+  margin:auto;
+  width: 50%;
+  padding-bottom: 40%;
+  font-size: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+ 
+}
+
+.Contact a {
+  background-color:#321c20;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+a.top {
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: #5e4450;
+  position:relative;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
